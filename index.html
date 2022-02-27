@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Word Game</title>
+</head>
+<body>
+    <div class="main">
+      <div class="header"> 
+          <h2><div class="heading">Word Game</div></h2>
+      </div>  
+     <div class="container">
+          <div class="leftbar">
+              <div class="correct">
+                  Correct Words
+              </div>
+              <div class="correctWord" id="correctList">
+              <div></div>
+              
+              </div>
+          </div>
+          <div class="middlebar">
+              <div class="word">
+                  Words
+              </div>
+              <div class="fall">
+                <div class="current-word">apple</div>
+              </div>
+          </div>
+         <div class="rightbar">
+             <div class="wrong">
+                 Incorrect Words
+             </div>
+             <div class="incorrectWord" id="incorrectList">
+             <div></div>
+             </div>
+         </div>
+    </div>
+    <div class="footer">
+      <input type="text" placeholder=" type word...." class="input1"  id="entered">
+       <div class="score-board">1</div>
+    </div>
+</div>
+<div class="pop-up">
+<div class="modal modal-play-again hide">
+    <div class="modal-content">
+      <h1 class="result-msg">You</h1>
+      <div class="result-icon">🏆</div>
+      <!-- <h3>Score : 10</h3> -->
+      <button id="btn-play-again" onclick ="fun();">Play again</button>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
